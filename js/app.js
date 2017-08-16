@@ -326,6 +326,15 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (e.target.value === 'bitcoin') {
             displayPayment (bitcoinDiv);
         }
+        //every time the user change the payment method, the error messages need to be cleaned.
+        //The same to the content.
+        //See req. 6 and req. 7
+        cleanErrorMessage(ccnum);
+        cleanErrorMessage(zipCode);
+        cleanErrorMessage(cvvCode);
+        ccnum.value = "";
+        zipCode.value = "";
+        cvvCode.value = "";
     });// end paymennt listener
 
     initPayment();
