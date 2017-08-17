@@ -509,10 +509,14 @@ document.addEventListener('DOMContentLoaded', () => {
         let OkName = isOkName();
         let OkEmail = isOkEmail();
         let OkActivities = isOkActivities();
-        let OkCcnum = isOkCcnum();
-        let OkzipCode= isOkzipCode();
-        let OkCvv = isOkCvv();
-        let okForm = OkName && OkEmail && OkActivities && OkCcnum && OkzipCode && OkCvv;
+        let okForm = OkName && OkEmail && OkActivities;
+        //The program check the credit card if it is selected
+        if (paymentOptions[1].selected == true) {
+            let OkCcnum = isOkCcnum();
+            let OkzipCode= isOkzipCode();
+            let OkCvv = isOkCvv();
+            okForm = OkName && OkEmail && OkActivities && OkCcnum && OkzipCode && OkCvv;
+        }
         //Cut the event if all isn't right
         if (!okForm) {
             e.preventDefault();
@@ -691,8 +695,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /************************** req 7. **************************/
 
-    /** The program review almost all the form with each key up.
-    Activities no.
+    /** The program review  all the form with each key up or click.
+    Activities needs click.
     **/
 
     emailUser.addEventListener('keyup', () => {
@@ -703,7 +707,7 @@ document.addEventListener('DOMContentLoaded', () => {
         isOkEmail();
     });
 
-    activities.addEventListener('keyup', () => {
+    activities.addEventListener('click', () => {
         isOkActivities();
     });
 
