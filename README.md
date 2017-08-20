@@ -7,6 +7,7 @@ Project 3 - techdegree TreeHouse
 
 req 1.  Focus on the first field
         1.1 On page load, the cursor appears in the "Name" field, ready for a user to type.
+        
 req 2.  A text field that will be revealed when the "Other" option is selected from the "Job Role" drop down menu.
         Give the field an id of “other-title,” and add the placeholder text of "Your Job Role" to the field.
             \\--> We create the field in the HTML, in order to response to no-js context.
