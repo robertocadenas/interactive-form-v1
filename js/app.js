@@ -669,9 +669,6 @@ document.addEventListener('DOMContentLoaded', () => {
         Look first section of req. 7
          **/
 
-         //const belowName = name.parentElement.children[1];
-         //const belowMail = emailUser.parentElement.children[3];
-         //const belowPayment = creditCardDiv.parentElement.children[0];
 
     function cleanErrorMessage (elementERR, typeErr) {
         // name.labels[0].children looking if it has children, messages previous
