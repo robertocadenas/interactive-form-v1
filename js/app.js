@@ -154,7 +154,10 @@ document.addEventListener('DOMContentLoaded', () => {
             for (let i = 0; i < colorShirtOptions.length; i+=1) {
                 if (colorShirtOptions[i].getAttribute('class') === 'JSPuns') {
                     colorShirtOptions[i].hidden = '';
-                    colorShirtOptions[i].disabled = ''; //we use this option for Safari
+                    // note next option "disabled": we use this option for Safari.
+                    // If I don't do that I need to remove and append elements in Safari.
+                    // And is better from a UX point of view, because the user sees what options are related.
+                    colorShirtOptions[i].disabled = '';
                     if (firstSelected == 0) { /** Changing option selected **/
                         colorShirtOptions[i].selected = 'true';
                         firstSelected += 1;
@@ -521,9 +524,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!okForm) {
             e.preventDefault();
             console.log('form no completed');
-        } else {
+        /* In case you want to test the form completed without sending.
+            } else {
             e.preventDefault();
             console.log('GREAT! form completed');
+        */
         }
     });
 
