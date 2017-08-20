@@ -1,5 +1,6 @@
 # interactive-form-v1
 Project 3 - techdegree TreeHouse
+
 /*
 
 -- build-an-interactive-form -- Techdegree -- TeamTreeHoue --
@@ -7,12 +8,10 @@ Project 3 - techdegree TreeHouse
 
 req 1.  Focus on the first field
         1.1 On page load, the cursor appears in the "Name" field, ready for a user to type.
-        
 req 2.  A text field that will be revealed when the "Other" option is selected from the "Job Role" drop down menu.
         Give the field an id of “other-title,” and add the placeholder text of "Your Job Role" to the field.
             \\--> We create the field in the HTML, in order to response to no-js context.
             \\--> We put "other-title" without ',' It looks like a typo.
-            
 req 3.  For the T-Shirt color menu, only display the color options that match the design selected in the "Design" menu.
             If the user selects "Theme - JS Puns"
                 then the color menu should only display "Cornflower Blue," "Dark Slate Grey," and "Gold."
@@ -43,4 +42,5 @@ req EXTRA.  Hide the "Color" label --> DONE in req. 3
                 --> DONE in Email and Payment method in req.6 and req. 7
             Program your form so that it provides a real-time validation error message for at least one text input field.
                 --> New section, req. EXTRA.
+
 */
