@@ -1,5 +1,6 @@
 # interactive-form-v1
 Project 3 - techdegree TreeHouse
+/*
 
 -- build-an-interactive-form -- Techdegree -- TeamTreeHoue --
  -- Project 3 -- requirements --
@@ -40,3 +41,4 @@ req EXTRA.  Hide the "Color" label --> DONE in req. 3
                 --> DONE in Email and Payment method in req.6 and req. 7
             Program your form so that it provides a real-time validation error message for at least one text input field.
                 --> New section, req. EXTRA.
+*/
