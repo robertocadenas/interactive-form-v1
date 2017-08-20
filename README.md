@@ -12,6 +12,7 @@ req 2.  A text field that will be revealed when the "Other" option is selected f
         Give the field an id of “other-title,” and add the placeholder text of "Your Job Role" to the field.
             \\--> We create the field in the HTML, in order to response to no-js context.
             \\--> We put "other-title" without ',' It looks like a typo.
+            
 req 3.  For the T-Shirt color menu, only display the color options that match the design selected in the "Design" menu.
             If the user selects "Theme - JS Puns"
                 then the color menu should only display "Cornflower Blue," "Dark Slate Grey," and "Gold."
